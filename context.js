@@ -19,7 +19,7 @@ $( document ).ready(function() {
 
   function updateBarry() {
     chrome.storage.local.get(["barry_status"], function (items) {
-      if ( items["barry_status"] == "barry") {
+      if ( items["barry_status"] == "barry" ) {
         setBarry("no_barry");
       }
       else {
@@ -31,7 +31,7 @@ $( document ).ready(function() {
   $('#barry-button').on('click', updateBarry);
 
   chrome.storage.local.get(["barry_status"], function (items) {
-    if ( items["barry_status"] == "barry") {
+    if ( items["barry_status"] == "barry" ) {
       $('#barry-button').prop('checked', true);
     }
     else {
