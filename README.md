@@ -1,5 +1,7 @@
-# brickroller
-Never going to let you get rick rolled (at least on Google Chrome).
+## brickroller ##
+#### Never going to let you get rick rolled (at least on Google Chrome) ####
+
+- - - -
 
 How to install:
 1. Download or clone the repo locally.
