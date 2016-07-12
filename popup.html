@@ -6,19 +6,21 @@
  -->
 <html>
   <head>
-    <title>Getting Started Extension's Popup</title>
+    <title>Brick Roller</title>
     <style>
       body {
         font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
         font-size: 100%;
+        width: 100px;
+        padding: 15px 0;
       }
-      #status {
+      /*#status {
         /* avoid an excessively wide status text */
         white-space: pre;
         text-overflow: ellipsis;
         overflow: hidden;
         max-width: 400px;
-      }
+      }*/
     </style>
 
     <!--
@@ -27,11 +29,11 @@
       -
       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
      -->
-    <script src="popup.js"></script>
+    <script src="pass.js"></script>
   </head>
   <body>
-    <div id="status">STATUS DIV</div>
-    
-    <img id="image-result" hidden>
+    <form id="barry-form">
+      <input type="checkbox" id="barry-button"> Barry Me?</input>
+    </form>
   </body>
 </html>
