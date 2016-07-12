@@ -1,24 +1,3 @@
-function setBarry(){
-  chrome.storage.local.get(["barry_status"], function (items) {
-    var barry_status = items["barry_status"];
-    console.log(barry_status);
-    if ( barry_status == "barry") {
-      chrome.storage.local.set({"barry_status": "no_barry"});
-      console.log('unbarried');
-    }
-    else {
-      chrome.storage.local.set({"barry_status": "barry"});
-      console.log('barried');
-    }
-  });
-
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('barry-button').addEventListener('click', setBarry);
-});
-
-
 $( document ).ready(function() {
   var rick_roll_urls = ['https://www.youtube.com/watch?v=dQw4w9WgXcQ',
                         'http://rickrollomatic.com/'];
@@ -39,5 +18,3 @@ $( document ).ready(function() {
     }
   });
 });
-
-// TODO: Maybe turn all of them into barry white songs?
