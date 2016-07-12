@@ -7,8 +7,7 @@ $( document ).ready(function() {
     if ($.inArray(that.attr('href'), rick_roll_urls) !== -1) {
       chrome.storage.local.get(["barry_status"], function (items) {
         if (items["barry_status"] == "barry") {
-          that.attr('href', 'https://www.youtube.com/watch?v=eLdSYF0WxyE')
-          console.log("BARRIED");
+          that.attr('href', 'https://www.youtube.com/watch?v=eLdSYF0WxyE');
         }
         else {
           that.text("RICK ROLL");

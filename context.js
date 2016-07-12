@@ -32,7 +32,6 @@ $( document ).ready(function() {
 
   chrome.storage.local.get(["barry_status"], function (items) {
     if ( items["barry_status"] == "barry") {
-      console.log("supposed to check now");
       $('#barry-button').prop('checked', true);
     }
     else {
